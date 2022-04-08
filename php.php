@@ -43,13 +43,13 @@ for($i = 0; $i < 2; $i++){
 
 echo 
 "桃\n",
-"最高金額",$max_price[0],"\n",
+"最高値",$max_price[0],"\n",
 "最安値",$min_price[0],"\n",
 "平均価格",$ave_price[0],"\n";
 
 echo 
 "イチゴ\n",
-"最高金額",$max_price[1],"\n",
+"最高値",$max_price[1],"\n",
 "最安値",$min_price[1],"\n",
 "平均価格",$ave_price[1],"\n";
 
