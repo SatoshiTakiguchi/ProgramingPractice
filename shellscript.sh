@@ -1,12 +1,7 @@
-TZ=JST-9 date +%Y年%m月%d日%H時%M分
-YEAR=$(TZ=JST+15 date +%Y)
-MONTH=$(TZ=JST+15 date +%m)
-DAY=$(TZ=JST+15 date +%d)
-HOUR=$(TZ=JST+15 date +%H)
-MINUTS=$(TZ=JST+15 date +%M)
-AMorPM=$(TZ=JST+15 date +%p)
-if [ $AMorPM = "AM" ]; then
-    ls -la
+# 午前午後の取得
+AMorPM=$(TZ=JST-9 date +%p)
+if [ $AMorPM = "AM" ] ; then
+    ls -la >output.txt #ファイルへ書き出し
 else
-    TZ=JST+15 date +%Y年%m月%d日%H時%M分
+    TZ=JST-9 date +%Y年%m月%d日%H時%M分 # 現在時刻表示
 fi
